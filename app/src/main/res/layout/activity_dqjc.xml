@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/colorBack1"
+    >
+    <RelativeLayout style="@style/TopTitleBack1"
+        >
+        <TextView style="@style/TitleTextBack1"
+            android:id="@+id/dq_text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电器"
+            />
+        <Button style="@style/TitleButtonBack1"
+            android:id="@+id/dq_button_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/return_dqjc_text"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical"
+            />
+        <Button style="@style/TitleButtonBack1"
+            android:id="@+id/dq_button_dqsjk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dqjc_dqsjk_text"
+            android:layout_alignParentRight="true"
+            android:gravity="right|center_vertical"
+            />
+    </RelativeLayout>
+    <View
+        android:background="@color/colorBack4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_ver_pad"/>
+    <GridView
+        android:id="@+id/dq_grid_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="4"
+        android:background="@color/colorBack2"
+        >
+    </GridView>
+    <View
+        android:background="@color/colorBack4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_ver_pad"/>
+    <ListView
+        android:id="@+id/dq_list_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorBack2"
+        >
+    </ListView>
+</LinearLayout>

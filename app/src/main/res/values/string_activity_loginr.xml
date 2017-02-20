@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="loginr_user_hit">账号/手机号/邮箱</string>
+    <string name="loginr_pass_hit">密码</string>
+    <string name="loginr_login_text">登录</string>
+    <string name="loginr_text_wyty">我已阅读并同意</string>
+    <string name="loginr_button_fwtk">服务条款</string>
+    <string name="loginr_notlogin_text">无法登录?</string>
+    <string name="loginr_register_text">新用户注册</string>
+    <string name="register_return_text">&lt;  登录</string>
+    <string name="dqjc_dqsjk_text">电器数据库  ></string>
+    <string name="return_grzx_text">&lt;  个人中心</string>
+    <string name="return_yjgl_text">&lt;  设备管理</string>
+    <string name="return_tjsb_text">&lt;  添加设备</string>
+    <string name="return_dqjc_text">&lt;  电器监测</string>
+    <string name="return_dq_text">&lt;  电器</string>
+    <string name="return_gy_text">&lt;  关于</string>
+</resources>

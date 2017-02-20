@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/colorBack1"
+    >
+    <RelativeLayout style="@style/TopTitleBack1"
+        >
+        <TextView style="@style/TitleTextBack1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设备管理"
+            />
+        <Button style="@style/TitleButtonBack1"
+            android:id="@+id/yjgl_button_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/return_dqjc_text"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical"
+            />
+        <Button style="@style/TitleButtonBack1"
+            android:id="@+id/yjgl_spinner_lb"
+            android:layout_width="@dimen/item_main_image"
+            android:layout_height="@dimen/item_main_image"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_lb_button"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+    <GridView
+        android:id="@+id/yjgl_grid_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBack2"
+        android:numColumns="3"
+        >
+    </GridView>
+
+
+
+</LinearLayout>

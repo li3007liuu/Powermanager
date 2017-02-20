@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorBack1"
+    android:orientation="vertical"
+    >
+    <RelativeLayout style="@style/TopTitleBack1"
+        >
+        <TextView style="@style/TitleTextBack1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            />
+        <Button style="@style/TitleButtonBack1"
+            android:id="@+id/register_button_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_return_text"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorBack4"
+        android:orientation="vertical"
+        >
+        <EditText style="@style/EditTextBack4"
+            android:id="@+id/register_edit_user"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_edit_height"
+            android:hint="手机号/邮箱"
+            android:layout_marginTop="@dimen/login_ver_pad"
+            />
+        <Button style="@style/ButtonBack4"
+            android:id="@+id/register_button_next"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_edit_height"
+            android:text="下一步"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <CheckBox
+                android:id="@+id/register_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/login_hor_pad"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/loginr_text_wyty"
+                android:textColor="@color/colorPril4_2"
+                android:textSize="@dimen/login_text_size3"/>
+            <Button
+                android:id="@+id/register_button_fwtk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00ffffff"
+                android:text="@string/loginr_button_fwtk"
+                android:textColor="@color/colorPril4_1"
+                android:textSize="@dimen/login_text_size3"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:id="@+id/idaydiss_text_waste"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:textColor="@color/colorPril4_3"
+        android:textSize="@dimen/login_text_size3"
+        android:paddingLeft="@dimen/login_hor_pad"
+        android:gravity="center_vertical|left"
+        />
+    <TextView
+        android:id="@+id/idaydiss_text_money"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:textColor="@color/colorPril4_3"
+        android:textSize="@dimen/login_text_size3"
+        android:paddingLeft="@dimen/login_hor_pad"
+        android:gravity="center_vertical|left"
+        />
+    <TextView
+        android:id="@+id/idaydiss_text_time"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:textColor="@color/colorPril4_3"
+        android:textSize="@dimen/login_text_size3"
+        android:paddingLeft="@dimen/login_hor_pad"
+        android:gravity="center_vertical|left"
+        />
+</LinearLayout>

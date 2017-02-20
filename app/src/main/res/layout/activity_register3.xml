@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/colorBack1"
+    >
+    <RelativeLayout style="@style/TopTitleBack1"
+        >
+        <TextView style="@style/TitleTextBack1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            />
+        <Button style="@style/TitleButtonBack1"
+            android:id="@+id/register3_button_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_return_text"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorBack4"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/register3_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_edit_height"
+            android:textSize="@dimen/login_text_size2"
+            android:textColor="@color/colorPril4_2"
+            android:gravity="bottom"
+            android:paddingLeft="@dimen/login_hor_pad"
+            />
+        <EditText style="@style/EditTextBack4"
+            android:id="@+id/register3_edit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_edit_height"
+            android:hint="请输入验证码"
+            android:layout_marginTop="@dimen/login_ver_pad"
+            />
+        <Button style="@style/ButtonBack4"
+            android:id="@+id/register3_button_next"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_edit_height"
+            android:text="下一步"
+            />
+        <Button
+            android:id="@+id/register3_button_resend"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_edit_height"
+            android:background="#00ffffff"
+            android:layout_marginTop="8dp"
+            android:textColor="@drawable/selector_text_color_button_back1"
+            android:textSize="@dimen/login_text_size2"
+            />
+    </LinearLayout>
+
+</LinearLayout>

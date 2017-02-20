@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="daydisstitle">
+        <item>日视图</item>
+        <item>周视图</item>
+        <item>月视图</item>
+    </string-array>
+</resources>

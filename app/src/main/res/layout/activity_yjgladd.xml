@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/colorBack1"
+    >
+    <RelativeLayout style="@style/TopTitleBack1"
+        >
+        <TextView style="@style/TitleTextBack1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加设备"
+            />
+        <Button style="@style/TitleButtonBack1"
+            android:id="@+id/yjgladd_button_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/return_yjgl_text"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical"
+            />
+        <Button style="@style/TitleButtonBack1"
+            android:id="@+id/yjgladd_button_search"
+            android:layout_width="@dimen/item_main_image"
+            android:layout_height="@dimen/item_main_image"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_searchwg_button"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBack1">
+        <Button
+            android:id="@+id/yjgladd_button_sys"
+            android:layout_width="@dimen/grzx_image_height"
+            android:layout_height="@dimen/grzx_image_height"
+            android:layout_marginTop="@dimen/grzx_image_height"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/selector_syswg_ibutton"
+            />
+        <TextView
+            android:id="@+id/yjgladd_text_sys1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/yjgladd_button_sys"
+            android:layout_marginTop="@dimen/login_ver_pad"
+            android:layout_centerHorizontal="true"
+            android:text="扫一扫"
+            android:textColor="@color/colorBack2"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/yjgladd_text_sys1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/login_ver_pad"
+            android:text="产品后的二维码"
+            android:textColor="@color/colorBack2"
+            />
+    </RelativeLayout>
+    <GridView
+        android:id="@+id/yjgladd_grid_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorBack2"
+        android:numColumns="3"
+        >
+    </GridView>
+</LinearLayout>

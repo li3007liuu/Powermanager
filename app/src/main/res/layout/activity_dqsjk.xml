@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/colorBack1"
+    >
+    <RelativeLayout style="@style/TopTitleBack1"
+        >
+        <TextView style="@style/TitleTextBack1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电器数据库"
+            />
+        <Button style="@style/TitleButtonBack1"
+            android:id="@+id/dqsjk_button_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/return_dq_text"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical"
+            />
+        <Button style="@style/TitleButtonBack1"
+            android:id="@+id/dqsjk_button_lb"
+            android:layout_width="@dimen/item_main_image"
+            android:layout_height="@dimen/item_main_image"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_lb_button"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+    <View
+        android:background="@color/colorBack4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_ver_pad" />
+    <com.splxtech.powermanagor.ui.swipemenulistview.SwipeMenuListView
+        android:id="@+id/dqsjk_list_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorBack2"
+        android:drawSelectorOnTop="false"
+        />
+</LinearLayout>

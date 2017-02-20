@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_main_height"
+    android:orientation="horizontal"
+    >
+    <ImageView
+        android:id="@+id/imain_image_btlogo"
+        android:layout_gravity="center_vertical"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="@dimen/login_hor_pad"
+        android:scaleType="fitCenter"
+        android:layout_marginRight="@dimen/login_hor_pad"
+        />
+    <TextView
+        android:id="@+id/imain_text_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/colorPril4_3"
+        android:textSize="@dimen/login_text_size1"
+        />
+    <View
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        />
+</LinearLayout>

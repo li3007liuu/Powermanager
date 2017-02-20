@@ -1,0 +1,92 @@
+<resources>
+    <style name="ImageTranslucentTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <!--Android 5.x开始需要把颜色设置透明，否则导航栏会呈现系统默认的浅灰色-->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="colorAccent">@color/colorBack1</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="LoginFormContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+    </style>
+    <style name="ButtonBack4">
+        <item name="android:background">@drawable/selector_blue_corners_button</item>
+        <item name="android:textSize">@dimen/login_text_size1</item>
+        <item name="android:textColor">@drawable/selector_text_color_button</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/login_ver_pad</item>
+        <item name="android:layout_marginLeft">@dimen/login_hor_pad</item>
+        <item name="android:layout_marginRight">@dimen/login_hor_pad</item>
+    </style>
+    <style name="EditTextBack4">
+        <item name="android:background">@color/colorPril4_4</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/login_text_size2</item>
+        <item name="android:textColor">@color/colorPril4_3</item>
+        <item name="android:paddingLeft">@dimen/login_hor_pad</item>
+    </style>
+    <style name="TopTitleBack1">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:background">@color/colorBack1</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+    <style name="TitleTextBack1">
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textSize">@dimen/login_text_size1</item>
+        <item name="android:textColor">@color/colorPril1</item>
+    </style>
+    <style name="TitleButtonBack1">
+        <item name="android:textColor">@drawable/selector_title_button_text_color</item>
+        <item name="android:textSize">@dimen/login_text_size2</item>
+        <item name="android:background">#00ffffff</item>
+    </style>
+    <style name="DqImageIcons">
+        <item name="android:layout_width">@dimen/item_main_height</item>
+        <item name="android:layout_height">@dimen/item_main_height</item>
+        <item name="android:layout_marginLeft">@dimen/login_hor_pad</item>
+        <item name="android:layout_marginRight">@dimen/login_hor_pad</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+    <style name="DqItemName">
+        <item name="android:textSize">@dimen/login_text_size2</item>
+        <item name="android:textColor">@color/colorPril4_3</item>
+        <item name="android:height">32dp</item>
+    </style>
+    <style name="main_tab_bottom">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@drawable/selector_bottom_color</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginTop">6dp</item>
+    </style>
+    <style name="set_text">
+        <item name="android:textColor">@color/colorPril4_3</item>
+        <item name="android:textSize">@dimen/login_text_size2</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:paddingLeft">@dimen/login_hor_pad</item>
+    </style>
+    <style name="fdaydiss_hcharttext">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/colorPril4_2</item>
+        <item name="android:textSize">@dimen/login_text_size3</item>
+    </style>
+</resources>

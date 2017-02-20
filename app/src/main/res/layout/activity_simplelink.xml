@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/colorBack1"
+    >
+    <RelativeLayout style="@style/TopTitleBack1"
+        >
+        <TextView style="@style/TitleTextBack1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="智能配置"
+            />
+        <Button style="@style/TitleButtonBack1"
+            android:id="@+id/simplelink_button_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/return_tjsb_text"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@color/colorBack2"
+        >
+        <View
+            android:background="@color/colorBack3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_ver_pad"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/grzx_linear_height"
+            android:text="设备暂时无法使用5G WLAN配置 \n 如果使用的是5G WLAN，请切换其他WLAN"
+            android:textColor="@color/colorPril4_2"
+            android:textSize="@dimen/login_text_size2"
+            android:gravity="center"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_main_height"
+            android:paddingLeft="@dimen/login_hor_pad"
+            android:paddingRight="@dimen/login_hor_pad"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="您当前网络："
+                android:textSize="@dimen/login_text_size2"
+                android:textColor="@color/colorBack1"
+                android:gravity="center_vertical"
+                />
+            <TextView
+                android:id="@+id/simplelink_text_wifissid"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/login_text_size2"
+                android:textColor="@color/colorBack1"
+                android:gravity="center_vertical"
+                />
+        </LinearLayout>
+        <EditText style="@style/EditTextBack4"
+            android:id="@+id/simplelink_edit_wifipass"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_main_height"
+            android:background="@color/colorBack4"
+            android:hint="请输入wifi密码"
+            android:layout_marginTop="@dimen/login_ver_pad"
+            />
+        <Button style="@style/ButtonBack4"
+            android:id="@+id/simplelink_button_startconfig"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_main_height"
+            android:layout_marginTop="@dimen/login_ver_pad"
+            android:text="开始配置"
+            />
+        <ProgressBar style="@android:style/Widget.ProgressBar.Horizontal"
+            android:id="@+id/simplelink_progressbar_config"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/login_ver_pad"
+            android:max="100"
+            android:layout_marginLeft="@dimen/login_hor_pad"
+            android:layout_marginRight="@dimen/login_hor_pad"
+            />
+    </LinearLayout>
+</LinearLayout>

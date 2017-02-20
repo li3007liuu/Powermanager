@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+    <ImageView style="@style/DqImageIcons"
+        android:id="@+id/idq_image_dqicon"
+        />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="64dp"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/login_hor_pad"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView style="@style/DqItemName"
+                android:id="@+id/idq_text_name"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_marginBottom="4dp"
+                android:gravity="left|bottom"
+                android:layout_span="4"
+                android:layout_height="match_parent" />
+            <TextView style="@style/DqItemName"
+                android:id="@+id/idq_text_mode"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="4dp"
+                android:gravity="left|bottom"
+                android:textColor="@color/colorPril4_2"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+            <TableRow>
+                <TextView
+                    android:text="当日功耗"
+                    android:textColor="@color/colorPril4_2"
+                    android:textSize="@dimen/login_text_size2"
+                    android:layout_height="32dp"
+                    android:layout_width="wrap_content"
+                    android:gravity="top"
+                    android:paddingRight="4dp"
+                    />
+                <TextView
+                    android:id="@+id/idq_text_daywaste"
+                    android:textColor="@color/colorPril4_2"
+                    android:textSize="@dimen/login_text_size2"
+                    android:layout_height="32dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/login_hor_pad"
+                    android:gravity="top"
+                    />
+                <TextView
+                    android:text="当日电费"
+                    android:textColor="@color/colorPril4_2"
+                    android:textSize="@dimen/login_text_size2"
+                    android:layout_height="32dp"
+                    android:layout_width="wrap_content"
+                    android:gravity="top"
+                    android:paddingRight="4dp"
+                    />
+                <TextView
+                    android:id="@+id/idq_text_daymoney"
+                    android:textColor="@color/colorPril4_2"
+                    android:textSize="@dimen/login_text_size2"
+                    android:layout_height="32dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</LinearLayout>

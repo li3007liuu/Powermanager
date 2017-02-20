@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/colorBack1"
+    >
+    <RelativeLayout style="@style/TopTitleBack1"
+        >
+        <TextView style="@style/TitleTextBack1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电力波形"
+            />
+        <Button style="@style/TitleButtonBack1"
+            android:id="@+id/dlbx_button_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/return_dq_text"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorBack4"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/login_ver_pad"
+        android:paddingTop="@dimen/login_ver_pad"
+        android:paddingLeft="@dimen/login_hor_pad"
+        android:paddingRight="@dimen/login_hor_pad"
+        >
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/dlbx_linechart_dl"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/shape_corners_dlcs_white"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/dlbx_linechart_dy"
+            android:background="@drawable/shape_corners_dlcs_white"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+</LinearLayout>

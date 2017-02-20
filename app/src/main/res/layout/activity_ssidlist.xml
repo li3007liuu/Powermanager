@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorBack1"
+
+    >
+    <RelativeLayout style="@style/TopTitleBack1"
+        >
+        <TextView style="@style/TitleTextBack1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="可连接wifi列表"
+            />
+        <Button style="@style/TitleButtonBack1"
+            android:id="@+id/ssidlist_button_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/return_tjsb_text"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical"
+            />
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/ssidlist_list_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBack2"
+        android:paddingTop="@dimen/login_ver_pad"
+        android:paddingBottom="@dimen/login_ver_pad"
+        android:paddingLeft="@dimen/login_hor_pad"
+        android:paddingRight="@dimen/login_hor_pad"
+        >
+    </ListView>
+</LinearLayout>

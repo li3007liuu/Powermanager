@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/colorBack1"
+    >
+    <RelativeLayout style="@style/TopTitleBack1"
+        >
+        <TextView style="@style/TitleTextBack1"
+            android:id="@+id/todaydiss_text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电视机"
+            />
+        <Button style="@style/TitleButtonBack1"
+            android:id="@+id/todaydiss_button_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/return_dq_text"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical"
+            />
+        <Button
+            android:id="@+id/todaydiss_button_next"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/selector_todaydiss_next_bkg"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/login_hor_pad"
+            android:layout_marginTop="13dp"
+            />
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/todaydiss_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorBack2"
+        >
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

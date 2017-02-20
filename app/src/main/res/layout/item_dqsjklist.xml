@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ImageView style="@style/DqImageIcons"
+        android:id="@+id/idqsjk_image_dqicon"
+        />
+    <TableLayout
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_weight="1">
+        <TableRow>
+            <TextView style="@style/DqItemName"
+                android:text = "ID"
+                android:layout_width="wrap_content"
+                android:gravity="left|bottom"
+                android:layout_marginBottom="4dp"
+                android:layout_marginRight="@dimen/login_hor_pad"
+                />
+            <TextView style="@style/DqItemName"
+                android:id = "@+id/idqsjk_text_id"
+                android:layout_width="wrap_content"
+                android:gravity="left|bottom"
+                android:layout_marginBottom="4dp"
+                />
+            <TextView style="@style/DqItemName"
+                android:text = "名称"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/login_hor_pad"
+                android:layout_marginRight="@dimen/login_hor_pad"
+                android:gravity="left|bottom"
+                android:layout_marginBottom="4dp"
+                />
+            <TextView style="@style/DqItemName"
+                android:id = "@+id/idqsjk_text_name"
+                android:layout_width="wrap_content"
+                android:gravity="left|bottom"
+                android:layout_marginBottom="4dp"
+                android:layout_marginRight="@dimen/login_hor_pad"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView style="@style/DqItemName"
+                android:text = "总模式数"
+                android:textColor="@color/colorPril4_2"
+                android:layout_width="wrap_content"
+                android:gravity="top"
+                android:layout_marginRight="@dimen/login_hor_pad"
+                />
+            <TextView style="@style/DqItemName"
+                android:id = "@+id/idqsjk_text_nmode"
+                android:textColor="@color/colorPril4_2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:layout_marginRight="@dimen/login_hor_pad"
+                />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

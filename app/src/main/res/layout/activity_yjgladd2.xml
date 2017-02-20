@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/colorBack1"
+    >
+    <RelativeLayout style="@style/TopTitleBack1"
+        >
+        <TextView style="@style/TitleTextBack1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="智能配置"
+            />
+        <Button style="@style/TitleButtonBack1"
+            android:id="@+id/yjgladd2_button_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/return_tjsb_text"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:background="@color/colorBack4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <Button style="@style/ButtonBack4"
+            android:id="@+id/yjgladd2_button_findssid"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_edit_height"
+            android:text="搜索wifi"/>
+
+        <TextView
+            android:id="@+id/yjgladd2_text_wifiname"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_edit_height"
+            android:textSize="@dimen/login_text_size2"
+            android:textColor="@color/colorPril4_2"
+            android:gravity="bottom"
+            android:paddingLeft="@dimen/login_hor_pad"
+            />
+        <EditText style="@style/EditTextBack4"
+            android:id="@+id/yjgladd2_text_wifipass"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_edit_height"
+            android:hint="请输入wifi密码"
+            android:layout_marginTop="@dimen/login_ver_pad"
+            />
+        <Button style="@style/ButtonBack4"
+            android:id="@+id/yjgladd2_button_startconfig"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_edit_height"
+            android:text="开始配置"/>
+    </LinearLayout>
+</LinearLayout>

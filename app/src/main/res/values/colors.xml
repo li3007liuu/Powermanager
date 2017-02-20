@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBack1">#5AA9F9</color>
+    <color name="colorPril1">#FFFFFF</color>
+    <color name="colorBack2">#FFFFFF</color>
+    <color name="colorPril2_1">#000000</color>
+    <color name="colorPril2_2">#9D9D9E</color>
+    <color name="colorBack3">#DDDDDD</color>
+    <color name="colorBack4">#ECEDF1</color>
+    <color name="colorPril4_1">#5AA9F9</color>
+    <color name="colorPril4_2">#A0A1A5</color>
+    <color name="colorPril4_3">#000000</color>
+    <color name="colorPril4_4">#ffffff</color>
+    <color name="colorPril4_12">#17A5D7</color>
+    <color name="colorSexB">#56ABE4</color>
+    <color name="colorSexR">#EB4F38</color>
+    <color name="colorSexG">#5D5D5E</color>
+    <color name="colorOrange">#FEA255</color>
+    <color name="colorYellow">#FFCB01</color>
+    <color name="colorGreen">#00d3a1</color>
+    <color name="tm">#00ffffff</color>
+    <color name="gray3">#dcddde</color>
+</resources>
